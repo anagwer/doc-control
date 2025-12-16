@@ -50,7 +50,7 @@ if (!defined('ARI_FRAMEWORK_LOADED'))
 		var $_loadedNamespace = array();
 		var $_frameworkPathList = array();
 		
-		function &instance()
+		static function &instance()
 		{
 			static $instance;
 			
@@ -62,7 +62,7 @@ if (!defined('ARI_FRAMEWORK_LOADED'))
 			return $instance;
 		}
 		
-		function init()
+		static function init()
 		{
 			$GLOBALS[ARI_ROOT_NAMESPACE] = array();
 			$GLOBALS[ARI_ROOT_NAMESPACE][ARI_CONSTANTS_NAMESPACE] = array();
@@ -70,13 +70,13 @@ if (!defined('ARI_FRAMEWORK_LOADED'))
 			AriKernel::addFrameworkPath(dirname(__FILE__) . '/');
 		}
 		
-		function addFrameworkPath($path)
+		static function addFrameworkPath($path)
 		{
 			$inst =& AriKernel::instance();
 			$inst->_frameworkPathList[] = $path;
 		}
 		
-		function import($namespace)
+		static function import($namespace)
 		{
 			$inst =& AriKernel::instance();
 	
