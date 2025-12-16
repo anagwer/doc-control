@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){ //jika tombol submit di set atau dijalankan maka me
 	//memilih id Maximal atau id yang terbesar dari idPesan yang terdapat pada table pesan
 	//fungsi ini untuk mengambil data yang terakhir di inputkan/dipilih
 	//kemudian halaman akan diarahkan pada detail Pemesanan
-	echo "<script>window.location.href='http://localhost/ict3/index.php/agendakerja';</script>";
+	echo "<script>window.location.href='http://100.100.0.28/ict3/index.php/agendakerja';</script>";
 	exit;
 }
 
