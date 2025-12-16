@@ -110,7 +110,7 @@ class AriDocsViewerContentPlugin extends AriMambotBase
 		parent::__construct('aridoc', 'system');
 	}
 
-	function replaceCallback($attrs, $content)
+	function replaceCallback($attrs, $content = null)
 	{
 		AriKernel::import('DocsViewer.DocsViewer');
 
