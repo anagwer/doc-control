@@ -70,7 +70,7 @@ abstract class JHtmlTel
 			$display[4] = '.e164.arpa';
 		}
 
-		$display = implode($display, '');
+		$display = implode('', $display);
 
 		return $display;
 	}
