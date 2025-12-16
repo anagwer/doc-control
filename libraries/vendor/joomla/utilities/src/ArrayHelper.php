@@ -8,7 +8,7 @@
 
 namespace Joomla\Utilities;
 
-use Joomla\String\String as JoomlaString;
+use Joomla\String\StringHelper as JoomlaString;
 
 /**
  * ArrayHelper is an array utility class for doing all sorts of odds and ends with arrays.

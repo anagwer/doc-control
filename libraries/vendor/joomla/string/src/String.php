@@ -52,7 +52,7 @@ if (!function_exists('utf8_strcasecmp'))
  *
  * @since  1.0
  */
-abstract class String
+abstract class StringHelper
 {
 	/**
 	 * Increment styles.

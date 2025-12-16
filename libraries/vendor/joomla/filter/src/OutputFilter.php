@@ -9,7 +9,7 @@
 namespace Joomla\Filter;
 
 use Joomla\Language\Language;
-use Joomla\String\String as JoomlaString;
+use Joomla\String\StringHelper as JoomlaString;
 
 /**
  * OutputFilter

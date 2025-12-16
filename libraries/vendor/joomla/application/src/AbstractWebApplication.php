@@ -10,7 +10,7 @@ namespace Joomla\Application;
 
 use Joomla\Uri\Uri;
 use Joomla\Input\Input;
-use Joomla\String\String as JoomlaString;
+use Joomla\String\StringHelper as JoomlaString;
 use Joomla\Session\Session;
 use Joomla\Registry\Registry;
 
