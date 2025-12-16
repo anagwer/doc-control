@@ -533,7 +533,18 @@ abstract class JError
 	{
 		JLog::add('JError::handleEcho() is deprecated.', JLog::WARNING, 'deprecated');
 
-		$level_human = self::translateErrorLevel($error->get('level'));
+		if (method_exists($error, 'get'))
+		{
+			$level = $error->get('level');
+			$message = $error->get('message');
+		}
+		else
+		{
+			$level = E_ERROR;
+			$message = $error->getMessage();
+		}
+
+		$level_human = self::translateErrorLevel($level);
 
 		// If system debug is set, then output some more information.
 		if (JDEBUG)
@@ -563,7 +574,7 @@ abstract class JError
 		{
 			// Output as html
 			echo "<br /><b>jos-$level_human</b>: "
-				. $error->get('message') . "<br />\n"
+				. $message . "<br />\n"
 				. (JDEBUG ? nl2br($trace) : '');
 		}
 		else
@@ -571,7 +582,7 @@ abstract class JError
 			// Output as simple text
 			if (defined('STDERR'))
 			{
-				fwrite(STDERR, "J$level_human: " . $error->get('message') . "\n");
+				fwrite(STDERR, "J$level_human: " . $message . "\n");
 
 				if (JDEBUG)
 				{
@@ -580,7 +591,7 @@ abstract class JError
 			}
 			else
 			{
-				echo "J$level_human: " . $error->get('message') . "\n";
+				echo "J$level_human: " . $message . "\n";
 
 				if (JDEBUG)
 				{
@@ -609,25 +620,39 @@ abstract class JError
 	{
 		JLog::add('JError::handleVerbose() is deprecated.', JLog::WARNING, 'deprecated');
 
-		$level_human = self::translateErrorLevel($error->get('level'));
-		$info = $error->get('info');
+		if (method_exists($error, 'get'))
+		{
+			$level = $error->get('level');
+			$message = $error->get('message');
+			$info = $error->get('info');
+			$backtrace = $error->getBacktrace(true);
+		}
+		else
+		{
+			$level = E_ERROR;
+			$message = $error->getMessage();
+			$info = null;
+			$backtrace = $error->getTraceAsString();
+		}
+
+		$level_human = self::translateErrorLevel($level);
 
 		if (isset($_SERVER['HTTP_HOST']))
 		{
 			// Output as html
-			echo "<br /><b>J$level_human</b>: " . $error->get('message') . "<br />\n";
+			echo "<br /><b>J$level_human</b>: " . $message . "<br />\n";
 
 			if ($info != null)
 			{
 				echo "&#160;&#160;&#160;" . $info . "<br />\n";
 			}
 
-			echo $error->getBacktrace(true);
+			echo $backtrace;
 		}
 		else
 		{
 			// Output as simple text
-			echo "J$level_human: " . $error->get('message') . "\n";
+			echo "J$level_human: " . $message . "\n";
 
 			if ($info != null)
 			{
@@ -655,24 +680,35 @@ abstract class JError
 	{
 		JLog::add('JError::handleDie() is deprecated.', JLog::WARNING, 'deprecated');
 
-		$level_human = self::translateErrorLevel($error->get('level'));
+		if (method_exists($error, 'get'))
+		{
+			$level = $error->get('level');
+			$message = $error->get('message');
+		}
+		else
+		{
+			$level = E_ERROR;
+			$message = $error->getMessage();
+		}
+
+		$level_human = self::translateErrorLevel($level);
 
 		if (isset($_SERVER['HTTP_HOST']))
 		{
 			// Output as html
-			jexit("<br /><b>J$level_human</b>: " . $error->get('message') . "<br />\n");
+			jexit("<br /><b>J$level_human</b>: " . $message . "<br />\n");
 		}
 		else
 		{
 			// Output as simple text
 			if (defined('STDERR'))
 			{
-				fwrite(STDERR, "J$level_human: " . $error->get('message') . "\n");
+				fwrite(STDERR, "J$level_human: " . $message . "\n");
 				jexit();
 			}
 			else
 			{
-				jexit("J$level_human: " . $error->get('message') . "\n");
+				jexit("J$level_human: " . $message . "\n");
 			}
 		}
 
@@ -697,8 +733,20 @@ abstract class JError
 		JLog::add('JError::hanleMessage() is deprecated.', JLog::WARNING, 'deprecated');
 
 		$appl = JFactory::getApplication();
-		$type = ($error->get('level') == E_NOTICE) ? 'notice' : 'error';
-		$appl->enqueueMessage($error->get('message'), $type);
+		
+		if (method_exists($error, 'get'))
+		{
+			$level = $error->get('level');
+			$message = $error->get('message');
+		}
+		else
+		{
+			$level = E_ERROR;
+			$message = $error->getMessage();
+		}
+
+		$type = ($level == E_NOTICE) ? 'notice' : 'error';
+		$appl->enqueueMessage($message, $type);
 
 		return $error;
 	}
@@ -728,13 +776,26 @@ abstract class JError
 			$options['format'] = "{DATE}\t{TIME}\t{LEVEL}\t{CODE}\t{MESSAGE}";
 			JLog::addLogger($options, JLog::ALL, array('error'));
 		}
+		
+		if (method_exists($error, 'get'))
+		{
+			$message = $error->get('message');
+			$level = $error->get('level');
+			$code = $error->get('code');
+		}
+		else
+		{
+			$message = $error->getMessage();
+			$level = E_ERROR;
+			$code = $error->getCode();
+		}
 
 		$entry = new JLogEntry(
-			str_replace(array("\r", "\n"), array('', '\\n'), $error->get('message')),
-			$error->get('level'),
+			str_replace(array("\r", "\n"), array('', '\\n'), $message),
+			$level,
 			'error'
 		);
-		$entry->code = $error->get('code');
+		$entry->code = $code;
 		JLog::add($entry);
 
 		return $error;
