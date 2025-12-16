@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="system" method="upgrade" client="site">
+	<name>System - ARI Docs Viewer</name>
+	<author>ARI Soft</author>
+	<creationDate>August 2015</creationDate>
+	<copyright>ARI Soft</copyright>
+	<license>GNU/GPL license (http://www.gnu.org/copyleft/gpl.html)</license>
+	<authorEmail>info@ari-soft.com</authorEmail>
+	<authorUrl>www.ari-soft.com</authorUrl>
+	<version>1.3.9</version>
+	<description>ARI_DOCS_VIEWER_PLUGIN</description>
+	<scriptfile>script.php</scriptfile>
+	<files folder="install">
+		<filename plugin="aridocsviewer">aridocsviewer.php</filename>
+		<filename plugin="aridocsviewer">aridocsviewer.xml</filename>
+		<folder>aridocsviewer/</folder>
+		<folder>help/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_aridocsviewer.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_aridocsviewer.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="plugins/system/aridocsviewer/aridocsviewer/fields">
+				<field type="list" name="loadJQuery" default="1" label="ADV_LABEL_JQLOAD" description="ADV_DESCR_JQLOAD">
+					<option value="0">ADV_NO</option>
+					<option value="1">ADV_YES</option>
+				</field>
+				<field type="list" name="callNC" default="1" label="ADV_LABEL_NOCONFLICT" description="ADV_DESCR_NOCONFLICT">
+					<option value="0">ADV_NO</option>
+					<option value="1">ADV_YES</option>
+				</field>
+				<field type="list" name="engine" default="iframe" label="ADV_LABEL_ENGINE" description="ADV_DESCR_ENGINE">
+					<option value="iframe">ADV_IFRAME</option>
+					<option value="article">ADV_ARTICLE</option>
+					<option value="google">ADV_GOOGLE</option>
+				</field>
+				<field type="list" name="opt_loadingPane" default="1" label="ADV_LABEL_LOADINGPAGE" description="ADV_DESCR_LOADINGPAGE">
+					<option value="0">ADV_NO</option>
+					<option value="1">ADV_YES</option>
+				</field>
+				<field type="text" name="opt_loadingMessage" size="50" default="Loading ..." label="ADV_LABEL_LOADINGMESSAGE" description="ADV_DESCR_LOADINGMESSAGE" />
+				<field type="text" name="opt_class" default="" size="15" label="ADV_LABEL_CSSCLASS" description="ADV_DESCR_CSSCLASS" />
+				<field type="list" name="opt_showDownloadLink" default="0" label="ADV_LABEL_SHOWDOWNLOADLINK" description="ADV_DESCR_SHOWDOWNLOADLINK">
+					<option value="0">ADV_NO</option>
+					<option value="1">ADV_YES</option>
+				</field>
+				<field type="text" size="50" filter="raw" name="opt_downloadLink" default="Download" label="ADV_LABEL_DOWNLOADLINK" description="ADV_DESCR_DOWNLOADLINK" />
+
+				<field type="modal" name="modal" label="" description="" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

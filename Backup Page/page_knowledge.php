@@ -1,0 +1,100 @@
+<style>
+table{ font-size:12px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
+</style>
+<?
+// untuk memulai session pada fungsi login
+session_start();
+
+	include('koneksi_dokumen.php');
+	
+	
+
+if(isset($_POST['submit'])){ //jika tombol submit di set atau dijalankan maka melakukan aksi
+	//deklarasi variable POST
+	$judul 		 = $_POST['judul'];
+	$deskripsi	 = $_POST['deskripsi'];
+	$jenis_file	 = $_POST['jenis_file'];
+	$tgl_upload	 = $_POST['tgl_upload'];
+	$recomended	 = $_POST['recomended'];
+	$departemen	 = $_POST['departemen'];
+	
+	
+	
+	
+	//deklarasi variable $table, $field yang akan digunakan untuk fungsi insert data
+		$table = "INSERT INTO knowledge SET";
+		$field = "judul 	 = '$judul',
+				  deskripsi  = '$deskripsi',
+				  jenis_file = '$jenis_file',
+				  tgl_upload = '$tgl_upload',
+				  recomended = '$recomended',
+				  departemen = '$departemen'";
+		
+				
+				 
+	//melakukan query dari variable $table dan $field
+	mysql_query("$table $field")or die ('Error!!'.mysql_error());
+	//memilih id Maximal atau id yang terbesar dari idPesan yang terdapat pada table pesan
+	//fungsi ini untuk mengambil data yang terakhir di inputkan/dipilih
+	//kemudian halaman akan diarahkan pada detail Pemesanan
+	echo "<script>window.location.href='http://businessprocess/ict/index.php/knowledge-db/add-knowledge';</script>";
+	exit;
+}
+
+//------------------------------------------------------------------
+
+
+?>
+
+<!--center><h4>&raquo; Form Input &laquo;</h4>
+
+<!----------------------------------------Membuat tampilan form registrasi pemesanan---------------------------------------------------->
+
+
+
+<?
+session_start();
+
+	include "data_koneksi.php";
+	
+//$select = "SELECT * from document WHERE `DIVISION`='LBG'";
+$select = "SELECT * from knowledge";
+
+//membuat variable $resultselect untuk menjalankan query yang ada pada variable $select
+$resultselect= mysql_query($select)or die ('Error load data : '.mysql_error());
+if(mysql_num_rows($resultselect)==0){ //mengecek apakan jumlah data dari variable $resultselect adalah 0
+	echo"<center>Data tidak tersedia!</center>";	//jika 0 maka akan muncul pesan data tidak tersedia
+}else{	//jika tidak 0 atau ada data didalamnya maka akan ditampilkan isi dari query tersebut
+echo "<table class='table table-striped table-bordered table-condensed bootstrap-datatable datatable' cellspacing='0' cellpadding='0' width='80%' align ='center' border ='1'>
+<tr>
+	<tr>
+		<th bgcolor='silver' style='text-align:center; padding-top:15px;'>No</th>
+		<th bgcolor='silver' style='text-align:center; padding-top:15px;'>Judul</th>
+		<th bgcolor='silver' style='text-align:center; padding-top:15px;'>Deskripsi</th>
+		<th bgcolor='silver' style='text-align:center;'>Jenis File</th>
+		<th bgcolor='silver' style='text-align:center;'>Tanggal Upload</th>
+		<th bgcolor='silver' style='text-align:center;'>Recommended By</th>
+		<th bgcolor='silver' style='text-align:center; padding-top:15px;'>Departement</th>
+	</tr>
+</tr>";
+$no=0;
+while($row = mysql_fetch_array($resultselect)){
+extract($row);
+//jika tidak makan $butt bernilai "Setujui"
+echo "<tr>
+	<td style='text-align:center;'>".$no=1+$no."</td>";
+	if ($file_knowledge!=null){
+	//echo "<td style='text-align:center;'><a href='http://100.100.1.148/documentcontrol/uploads_file/doc_wi/".$file_knowledge."' target='_blank' title=".$file_knowledge.">".$judul."</a></td>";
+	echo "<td style='text-align:left;'><a href='index.php?option=com_content&view=article&id=121&idfile=".$file_knowledge."' title=".$file_knowledge.">".$judul."</a></td>";
+	}else{ 
+	echo"<td style='text-align:left;'>".$judul."</td>";
+	}
+	echo"<td style='text-align:left;'>".$deskripsi."</td>
+	<td style='text-align:center;'>".$jenis_file."</td>
+	<td style='text-align:center;'>".$tgl_upload."</td>
+	<td style='text-align:center;'>".$recomended."</td>
+	<td style='text-align:center;'>".$departemen."</td>
+	</tr>";
+}
+echo"</table>";
+}

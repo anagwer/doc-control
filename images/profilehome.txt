@@ -1,0 +1,215 @@
+<p><img class="uk-align-center" src="images/yootheme/demo/default/home_worldmap.png" alt="Demo" width="980" height="390" /></p>
+<h1 class="tm-negativ-margin-top uk-text-center">Our Team</h1>
+<p class="uk-width-medium-2-3 uk-align-center uk-text-center"><mark class="tm-mark-scribble">We work with passion to deliver each projects with the best quality and competitive pricings. We are some very enthusiastic people. Thus, let us introduce ourselves.</mark></p>
+<hr class="uk-grid-divider" />
+<div class="uk-grid">
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/ovan.png" alt="CEO Image" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">General Manager</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large"><a>Ovan Diana</a></p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/pamungkas.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">DH. Application</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Pamungkas</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/yusep.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">DH. Networking</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Yusep Inang</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/chen.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">DH. Hardware</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Kusumastuti Sugiarto</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/fedi.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Programmer</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">M. Fedy Aryanto</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/kiki.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Programmer</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Rizki Tunjung Sari</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/arif.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Programmer</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Arif Rokhmanul H.</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/heru.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Functional AX</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Tri Heru</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/agung.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Networking</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Dian Agung Pamboedi</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/ori.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Networking</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">M. Sofyan Syaori</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/joko.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Networking</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Joko Ari Sulistiono</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/twosilo.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Networking</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Twosilo</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/hakim.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Networking</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Hakim</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/sari.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Networking</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Siti Zuntikanah</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/atut.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Networking</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Atut Widiyanto</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/dimas1.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Helpdesk</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Raditya Dimas</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/dimas2.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Helpdesk</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Dimas Ragil</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/zaka.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Helpdesk</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Zaka</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+<div class="uk-width-medium-1-2">
+<div class="uk-grid">
+<div class="uk-width-large-2-10 uk-width-medium-3-10 uk-width-1-1 uk-float-left uk-text-center"><img class="uk-margin-bottom tm-image-round uk-thumbnail" src="images/profile/wahyu.jpg" alt="CCO Image" width="233" height="232" /></div>
+<div class="uk-width-large-8-10 uk-width-medium-7-10 uk-width-1-1 uk-text-center-small">
+<p class="uk-text-bold">Helpdesk</p>
+<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</i></p>
+<p class="tm-primary-color uk-text-large">Wahyu Yuli K.</p>
+<p class="tm-primary-color uk-text-large"> </p>
+</div>
+</div>
+</div>
+</div>
