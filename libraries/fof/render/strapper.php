@@ -103,7 +103,7 @@ class FOFRenderStrapper extends FOFRenderAbstract
 		}
 
 		// Wrap output in divs
-		echo '<div id="akeeba-bootstrap" class="' . implode($classes, ' ') . "\">\n";
+		echo '<div id="akeeba-bootstrap" class="' . implode(' ', $classes) . "\">\n";
 		echo "<div class=\"akeeba-bootstrap\">\n";
 		echo "<div class=\"row-fluid\">\n";
 

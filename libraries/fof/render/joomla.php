@@ -98,7 +98,7 @@ class FOFRenderJoomla extends FOFRenderAbstract
 			);
 		}
 
-		echo '<div id="akeeba-renderjoomla" class="' . implode($classes, ' ') . "\">\n";
+		echo '<div id="akeeba-renderjoomla" class="' . implode(' ', $classes) . "\">\n";
 
 		// Render submenu and toolbar (only if asked to)
 		if ($input->getBool('render_toolbar', true))
